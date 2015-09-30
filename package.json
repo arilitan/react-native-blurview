@@ -1,0 +1,30 @@
+{
+  "name": "react-native-blurview",
+  "version": "1.0.0",
+  "description": "React Native Blurview component",
+  "main": "BlurView.ios.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "dependencies": {
+    "merge": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arilitan/react-native-blurview.git"
+  },
+    "files": [
+    "RNBlurView.xcodeproj",
+    "RNBlurView.h",
+    "RNBlurView.m",
+    "RNBlurView.h",
+    "RNBlurView.m",
+    "BlurView.ios.js",
+  ],
+  "author": "Ari Litan <arilitan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arilitan/react-native-blurview/issues"
+  },
+  "homepage": "https://github.com/arilitan/react-native-blurview#readme"
+}
