@@ -1,13 +1,13 @@
 //
-//  RNBlurView.m
+//  RNBlurViewManager.h
 //  RNBlurView
 //
 //  Created by Ari Litan on 9/30/15.
 //  Copyright © 2015 Swish. All rights reserved.
 //
 
-#import "RNBlurView.h"
+#import "RCTViewManager.h"
 
-@implementation RNBlurView
+@interface RNBlurViewManager : RCTViewManager
 
 @end

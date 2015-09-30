@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		497F9CC21BBC44C10016AEFE /* RNBlurView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 497F9CC11BBC44C10016AEFE /* RNBlurView.h */; };
-		497F9CC41BBC44C10016AEFE /* RNBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F9CC31BBC44C10016AEFE /* RNBlurView.m */; };
+		497F9CCD1BBC45720016AEFE /* RNBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F9CCC1BBC45720016AEFE /* RNBlurView.m */; settings = {ASSET_TAGS = (); }; };
+		497F9CD01BBC47400016AEFE /* RNBlurViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F9CCF1BBC47400016AEFE /* RNBlurViewManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				497F9CC21BBC44C10016AEFE /* RNBlurView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +25,10 @@
 
 /* Begin PBXFileReference section */
 		497F9CBE1BBC44C10016AEFE /* libRNBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBlurView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		497F9CC11BBC44C10016AEFE /* RNBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBlurView.h; sourceTree = "<group>"; };
-		497F9CC31BBC44C10016AEFE /* RNBlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBlurView.m; sourceTree = "<group>"; };
+		497F9CCB1BBC45720016AEFE /* RNBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBlurView.h; sourceTree = "<group>"; };
+		497F9CCC1BBC45720016AEFE /* RNBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBlurView.m; sourceTree = "<group>"; };
+		497F9CCE1BBC47400016AEFE /* RNBlurViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBlurViewManager.h; sourceTree = "<group>"; };
+		497F9CCF1BBC47400016AEFE /* RNBlurViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBlurViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +45,10 @@
 		497F9CB51BBC44C10016AEFE = {
 			isa = PBXGroup;
 			children = (
-				497F9CC01BBC44C10016AEFE /* RNBlurView */,
+				497F9CCE1BBC47400016AEFE /* RNBlurViewManager.h */,
+				497F9CCF1BBC47400016AEFE /* RNBlurViewManager.m */,
+				497F9CCB1BBC45720016AEFE /* RNBlurView.h */,
+				497F9CCC1BBC45720016AEFE /* RNBlurView.m */,
 				497F9CBF1BBC44C10016AEFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,15 +59,6 @@
 				497F9CBE1BBC44C10016AEFE /* libRNBlurView.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		497F9CC01BBC44C10016AEFE /* RNBlurView */ = {
-			isa = PBXGroup;
-			children = (
-				497F9CC11BBC44C10016AEFE /* RNBlurView.h */,
-				497F9CC31BBC44C10016AEFE /* RNBlurView.m */,
-			);
-			path = RNBlurView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +117,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				497F9CC41BBC44C10016AEFE /* RNBlurView.m in Sources */,
+				497F9CCD1BBC45720016AEFE /* RNBlurView.m in Sources */,
+				497F9CD01BBC47400016AEFE /* RNBlurViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +206,13 @@
 		497F9CC81BBC44C10016AEFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../React/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -219,6 +222,13 @@
 		497F9CC91BBC44C10016AEFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../React/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -244,6 +254,7 @@
 				497F9CC91BBC44C10016AEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
